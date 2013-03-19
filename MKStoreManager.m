@@ -56,11 +56,6 @@
 @property (nonatomic, copy) void (^onRestoreFailed)(NSError* error);
 @property (nonatomic, copy) void (^onRestoreCompleted)();
 
-@property (nonatomic, assign, getter=isProductsAvailable) BOOL isProductsAvailable;
-
-@property (nonatomic, strong) SKProductsRequest *productsRequest;
-
-- (void) requestProductData;
 - (void) startVerifyingSubscriptionReceipts;
 -(void) rememberPurchaseOfProduct:(NSString*) productIdentifier withReceipt:(NSData*) receiptData;
 -(void) addToQueue:(NSString*) productId;
